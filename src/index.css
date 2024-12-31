@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("./assets/font/helbeticaneue/HelveticaNeueBold.otf");
+}
+
+@font-face {
+  font-family: "HelveticaBold";
+  src: url("./assets/font/helvetica-255/helvetica-compressed-5871d14b6903a.otf");
+}
+
+@font-face {
+  font-family: "HelveticaLight";
+  src: url("./assets/font/helbeticaneue/HelveticaNeueLight.otf");
+}
+
+body {
+  font-family: HelveticaLight !important;
+  background: rgba(35, 35, 35, 1);
+}
+html {
+  scroll-behavior: smooth !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: Helvetica !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Helvetica !important;
+}
+p {
+  letter-spacing: auto !important;
+  font-family: HelveticaLight !important;
+}
+
+.font-size-16px,
+a {
+  font-size: 16px !important;
+  font-weight: lighter !important;
+  line-height: 30px;
+  letter-spacing: 1px !important;
+  font-family: HelveticaLight !important;
+}
+.header-below-text {
+  font-size: 18px !important;
+  font-weight: 400 !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  .font-size-16px {
+    font-size: 12px !important;
+    line-height: 16px !important;
+    font-weight: 200 !important;
+    letter-spacing: 1.3px !important;
+  }
+}

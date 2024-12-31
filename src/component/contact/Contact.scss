@@ -1,0 +1,193 @@
+.Contact {
+  // background-image:
+  background: rgba(0, 0, 0, 1) url("../../assets/contact/contact.png") no-repeat
+    center center;
+  background-size: auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid;
+
+  .container {
+    border: 1px solid;
+
+    border-image-source: linear-gradient(
+      119.34deg,
+      #acacac 9.01%,
+      #5b5b5b 48.98%,
+      #000000 121.62%
+    );
+
+    .form-area {
+      display: flex;
+      justify-content: center;
+      margin-top: 5rem;
+
+      form {
+        width: 35%;
+        padding: 3rem 4rem;
+        border-image-source: linear-gradient(
+          119.34deg,
+          #acacac6b 9.01%,
+          #5b5b5b 48.98%,
+          #00000000 121.62%
+        );
+        backdrop-filter: blur(68.30000305175781px);
+        box-shadow: 15px 20px 52.7px 0px rgba(190, 190, 190, 0.1) inset;
+        background: linear-gradient(
+          113.6deg,
+          rgba(217, 217, 217, 0.2) -4.46%,
+          rgba(0, 0, 0, 0.1) 109.48%
+        );
+        border-radius: 40px;
+
+        animation: fadeIn 1s ease-out; // Add fade-in animation on form load
+
+        .form-label {
+          color: rgba(255, 255, 255, 1);
+          font-size: 16px;
+          letter-spacing: 1px;
+        }
+        input,
+        textarea {
+          background: rgba(70, 63, 61, 1);
+          color: #f4f9f8;
+          font-size: 12px;
+          border-radius: 30px;
+          border: none;
+          padding: 1rem 1.5rem;
+          transition: transform 0.3s ease-in-out; // Smooth transition on focus
+        }
+        input:focus,
+        textarea:focus {
+          transform: scale(1.05); // Scale up the input fields slightly on focus
+        }
+      }
+
+      .button-lets-talk {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+        button {
+          background: rgba(238, 42, 49, 1);
+          border-radius: 40px;
+          padding: 0.5rem 1.5rem;
+          width: 100%;
+          font-weight: 700;
+          transition: background-color 0.3s ease; // Smooth background color change on hover
+        }
+
+        button:hover {
+          background-color: rgba(
+            238,
+            42,
+            49,
+            0.8
+          ); // Button color change on hover
+        }
+      }
+
+      @media (max-width: 1200px) {
+        form {
+          width: 70%;
+          padding: 3rem;
+        }
+      }
+      @media (max-width: 768px) {
+        form {
+          padding: 2rem;
+          width: 100%;
+          .button-lets-talk {
+            button {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .text-contact {
+    h1 {
+      background: linear-gradient(180deg, #f4f9f8 0%, #3f3f3f 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-size: 70px;
+      text-align: center;
+      font-weight: 900;
+      animation: slideIn 1s ease-out; // Animation for heading
+    }
+    p {
+      color: rgba(244, 249, 248, 1);
+      text-align: center;
+      font-weight: lighter;
+      font-size: 12px;
+      span {
+        font-weight: 900;
+      }
+    }
+    @media (max-width: 786px) {
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .text-contact-fotter {
+    margin-top: 7rem;
+    .social-logos {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      a {
+        img {
+          width: 2rem;
+        }
+      }
+    }
+    p {
+      color: rgba(244, 249, 248, 1);
+      text-align: center;
+      font-size: 12px;
+      font-weight: lighter;
+    }
+    .icon-text {
+      font-weight: normal;
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      align-items: center;
+      span {
+        img {
+          width: 1.5rem;
+        }
+      }
+    }
+  }
+
+  // Animations
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}

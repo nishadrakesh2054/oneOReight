@@ -1,0 +1,98 @@
+.OurTeams {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: rgba(35, 35, 35, 1);
+
+  .row {
+    margin-top: 5rem;
+  }
+  .meet-team {
+    h1 {
+      font-size: 110px;
+      font-weight: 700;
+      text-align: center;
+      background-image: linear-gradient(180deg, #f4f9f8 0%, #3f3f3f 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+    }
+    @media (max-width: 1300px) {
+      h1 {
+        font-size: 70px;
+      }
+    }
+    @media (max-width: 786px) {
+      h1 {
+        font-size: 38px;
+        font-weight: 900 !important;
+      }
+    }
+  }
+
+  .image-team {
+    // height: 2rem;
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 100%;
+      border-radius: 5rem;
+      object-fit: cover;
+      border: 2px solid rgba(255, 255, 255, 1);
+      box-shadow: 32px 29px 36.2px 0px rgba(0, 0, 0, 0.25);
+    }
+    @media (max-width: 1000px) {
+      width: 20rem;
+    }
+    @media (max-width: 786px) {
+      width: 100%;
+    }
+  }
+  .text-team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    h1 {
+      font-size: 90px;
+      color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #fff;
+      text-align: center;
+      margin: 0;
+      font-weight: 100 !important;
+    }
+
+    .opacity-reduce {
+      opacity: 0.5;
+    }
+    p {
+      color: rgba(255, 255, 255, 1);
+      font-size: 16px;
+      margin-top: 1.5rem;
+      text-align: center;
+      span {
+        font-weight: 900 !important;
+      }
+    }
+    @media (max-width: 1000px) {
+      h1 {
+        font-size: 60px;
+      }
+      p {
+        margin-top: 1rem;
+      }
+    }
+    @media (max-width: 786px) {
+      margin-top: 1rem;
+      h1 {
+        font-size: 38px;
+        -webkit-text-stroke-width: 1px;
+      }
+    }
+  }
+  @media (max-width: 786px) {
+    padding-top: 1rem;
+  }
+}
