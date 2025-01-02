@@ -9,37 +9,38 @@
   background-position: center;
   border: 1px solid;
 
+  @media (max-width: 768px) {
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center;
+  }
+
   .container {
     border: 1px solid;
-
     border-image-source: linear-gradient(
       119.34deg,
       #acacac 9.01%,
       #5b5b5b 48.98%,
       #000000 121.62%
     );
-
     .form-area {
       display: flex;
       justify-content: center;
       margin-top: 5rem;
 
       form {
-        width: 35%;
+        width: 37%;
         padding: 3rem 4rem;
-        border-image-source: linear-gradient(
-          119.34deg,
-          #acacac6b 9.01%,
-          #5b5b5b 48.98%,
-          #00000000 121.62%
-        );
-        backdrop-filter: blur(68.30000305175781px);
-        box-shadow: 15px 20px 52.7px 0px rgba(190, 190, 190, 0.1) inset;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(15px);
+        box-shadow: 0 4px 30px rgba(255, 246, 246, 0.1);
         background: linear-gradient(
-          113.6deg,
-          rgba(217, 217, 217, 0.2) -4.46%,
-          rgba(0, 0, 0, 0.1) 109.48%
+          119.34deg,
+          rgba(255, 255, 255, 0.25) 0%,
+          rgba(255, 255, 255, 0.3) 10%,
+          rgba(255, 255, 255, 0.1) 100%
         );
+
         border-radius: 40px;
 
         animation: fadeIn 1s ease-out; // Add fade-in animation on form load
@@ -51,17 +52,17 @@
         }
         input,
         textarea {
-          background: rgba(70, 63, 61, 1);
+          background: #575250;
           color: #f4f9f8;
           font-size: 12px;
           border-radius: 30px;
           border: none;
           padding: 1rem 1.5rem;
-          transition: transform 0.3s ease-in-out; // Smooth transition on focus
+          transition: transform 0.3s ease-in-out;
         }
         input:focus,
         textarea:focus {
-          transform: scale(1.05); // Scale up the input fields slightly on focus
+          transform: scale(1.05);
         }
       }
 
@@ -75,7 +76,7 @@
           padding: 0.5rem 1.5rem;
           width: 100%;
           font-weight: 700;
-          transition: background-color 0.3s ease; // Smooth background color change on hover
+          transition: background-color 0.3s ease;
         }
 
         button:hover {
@@ -97,7 +98,9 @@
       @media (max-width: 768px) {
         form {
           padding: 2rem;
+          margin: 0 1.5rem;
           width: 100%;
+
           .button-lets-talk {
             button {
               font-size: 16px;

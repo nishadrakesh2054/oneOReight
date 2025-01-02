@@ -116,7 +116,7 @@ const TeamCarousel = () => {
               <div className="card-front">
                 <div className="bio-texts">
                   <p className="name">{member.name}</p>
-                  <p>{member.role}</p>
+                  <p className="role">{member.role}</p>
                 </div>
                 <img src={member.image} alt={member.name} />
                 <button onClick={() => handleFlip(index)}>

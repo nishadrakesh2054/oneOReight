@@ -1,6 +1,7 @@
-import React, { Suspense, lazy } from "react";
+import  { Suspense, lazy } from "react";
 import { useSpring, animated } from "@react-spring/web";
 import Loading from "./component/loading/Loading";
+import { useMediaQuery } from "react-responsive";
 
 // Lazy load all components
 const CustomNavbar = lazy(() => import("./component/navBar/Navbar"));
@@ -14,6 +15,7 @@ const OurTeams = lazy(() => import("./component/ourteam/OurTeams"));
 const Contact = lazy(() => import("./component/contact/Contact"));
 const Footer = lazy(() => import("./component/footer/Footer"));
 const OurStory = lazy(() => import("./component/wedontplay/OurStory"));
+const OurMobileStory = lazy(() => import("./component/wedontplay/MobileStory"));
 
 const AnimatedSection = ({ children, index }) => {
   const props = useSpring({
@@ -27,11 +29,17 @@ const AnimatedSection = ({ children, index }) => {
 };
 
 function App() {
+    const isMobile = useMediaQuery({ maxWidth: 768 });
+
   const sections = [
     { component: HeroSection },
     { component: About },
     { component: WeDontPlay },
-    { component: OurStory },
+
+    ...(isMobile
+        ? [{ component: OurMobileStory }]
+        : [{ component: OurStory }]),
+
     { component: Services },
     { component: Highlights },
     { component: Portfolio },

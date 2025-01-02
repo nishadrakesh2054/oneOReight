@@ -1,7 +1,6 @@
 import React from "react";
 import "./OurTeams.scss";
 import { Container, Row, Col } from "react-bootstrap";
-import ourteam from "../../assets/Websitassets/ourteam.png";
 import TeamCarousel from "./TeamCarousel";
 
 const OurTeams = () => {

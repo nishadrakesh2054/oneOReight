@@ -92,7 +92,7 @@ const Contact = () => {
               />
             </Form.Group>
             <div className="button-lets-talk">
-              <Button type="submit" variant="transparent">
+              <Button type="submit" variant="transparent" >
                 Let’s Talk
               </Button>
             </div>

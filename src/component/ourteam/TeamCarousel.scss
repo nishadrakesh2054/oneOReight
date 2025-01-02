@@ -88,10 +88,19 @@
           transition: transform 0.3s ease;
         }
         @media (max-width: 768px) {
+         
           .name {
-            font-size: 28px;
+            font-size: 38px;
             line-height: normal;
             font-weight: 900;
+            letter-spacing: 1.5px;
+          }
+          .role {
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 900;
+            letter-spacing: 1.5px;
+            margin-bottom: 0.5rem;
           }
           button {
             img {

@@ -84,6 +84,12 @@
         justify-content: center;
         margin-top: 3rem;
       }
+      @media (max-width: 567px) {
+        .btn-wave {
+          border-radius: 50px;
+          padding: 10px 20px;
+        }
+      }
     }
   }
 
