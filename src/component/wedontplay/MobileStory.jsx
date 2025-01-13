@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./MobileStory.scss";
+import "./mobilestory.scss";
 
 import { RxMinusCircled, RxPlusCircled } from "react-icons/rx";
 import { Button, Col, Container, Row } from "react-bootstrap";
