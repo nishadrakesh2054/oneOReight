@@ -33,7 +33,7 @@ const CustomNavbar = () => {
             <Nav.Link onClick={() => handleScroll("home")}>Home</Nav.Link>
             <Nav.Link onClick={() => handleScroll("about")}>About Us</Nav.Link>
             <Nav.Link onClick={() => handleScroll("services")}>
-              Services
+              Service
             </Nav.Link>
             <Nav.Link onClick={() => handleScroll("portfolio")}>
               Portfolio

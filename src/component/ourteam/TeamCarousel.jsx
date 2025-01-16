@@ -10,6 +10,7 @@ import nSir from "../../assets/team/4.png";
 // import lMaam from "../../assets/team/5.png";
 import Rakesh from "../../assets/team/RAKESH.png";
 import Rizn from "../../assets/team/RIJAN.png";
+import sajanSir from '../../assets/team/sajan.png'
 
 import "./TeamCarousel.scss";
 
@@ -62,6 +63,13 @@ const TeamCarousel = () => {
       bg: "#FF703D",
       info: "Leads teams, oversees strategy, and ensures seamless execution of projects.",
     },
+    {
+        name: "Sajan Subba",
+        role: "Software Developer",
+        image: sajanSir,
+        bg: "#FF703D",
+        info: "Guides teams and ensures flawless project execution..",
+      },
     {
       name: "Shristi Shakya",
       role: "Senior  Designer",
