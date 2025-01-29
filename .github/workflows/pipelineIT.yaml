@@ -46,7 +46,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build-output
-          path: build/
+          path: dist/
       
       # Example: Deploy to GitHub Pages (if applicable)
       - name: Deploy to GitHub Pages
@@ -54,7 +54,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: build
+          folder: dist  
 
   
 
