@@ -11,7 +11,10 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-      
+        with: 
+             repository: nishadrakesh2054/oneOReight
+
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -36,6 +39,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+        with:
+          repository: nishadrakesh2054/oneOReight
       
       - name: Download Build Artifacts
         uses: actions/download-artifact@v3
@@ -51,14 +56,9 @@ jobs:
           branch: gh-pages
           folder: build
 
-      # Example: Deploy to Vercel
-      # - name: Deploy to Vercel
-      #   run: npm install -g vercel && vercel --prod
+  
 
-      # Example: Deploy to Firebase
-      # - name: Deploy to Firebase
-      #   uses: FirebaseExtended/action-hosting-deploy@v0
-      #   with:
-      #     repoToken: '${{ secrets.GITHUB_TOKEN }}'
-      #     firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
-      #     channelId: live
+    
+     
+  
+      
