@@ -11,6 +11,7 @@ import nSir from "../../assets/team/4.png";
 import Rakesh from "../../assets/team/RAKESH.png";
 import Rizn from "../../assets/team/RIJAN.png";
 import sajanSir from '../../assets/team/sajan.png'
+import abisek from '../../assets/team/abshek1.png'
 
 import "./TeamCarousel.scss";
 
@@ -91,6 +92,13 @@ const TeamCarousel = () => {
       bg: "#FF7B4C",
       info: "Develops and implements efficient software solutions while optimizing application performance.",
     },
+    {
+        name: "Abhishek Shakya",
+        role: "Multimedia Producer",
+        image: abisek,
+        bg: "#FF7B4C",
+        info: "Creates and designs multimedia content such as videos, animations, and interactive media.",
+      },
 
     {
       name: "Rizan Maharjan",
