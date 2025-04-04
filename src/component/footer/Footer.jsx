@@ -51,6 +51,7 @@ const Footer = () => {
               <a href="#services">Services</a> <a href="#team">Our team</a>{" "}
               <a href="#portfolio">Portfolio</a>{" "}
               <a href="#contact">Contact Us</a>
+              <a href="/privacypolicy">PrivacyPolicy</a>
             </div>
           </div>
           <div className="copy-rights">

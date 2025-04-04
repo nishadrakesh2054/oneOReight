@@ -1,0 +1,24 @@
+.privacy {
+  background: #292929 url("../../assets/contact/contact.png") no-repeat center
+    center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+h2,
+h5 {
+  color: #fff;
+}
+p,
+li {
+  color: #e7e5e5;
+}
+
+a {
+  text-decoration: underline;
+  &:hover {
+    color: #ccc;
+  }
+}
