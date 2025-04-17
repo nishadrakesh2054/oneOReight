@@ -5,6 +5,7 @@ import location from "../../assets/Websitassets/location.png";
 import mail from "../../assets/Websitassets/mail.png";
 import call from "../../assets/footer/call.png";
 import "./Footer.scss";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const handleCall = () => {
@@ -51,12 +52,11 @@ const Footer = () => {
               <a href="#services">Services</a> <a href="#team">Our team</a>{" "}
               <a href="#portfolio">Portfolio</a>{" "}
               <a href="#contact">Contact Us</a>
-              <a href="/privacypolicy">PrivacyPolicy</a>
+              <Link to="/privacypolicy">PrivacyPolicy</Link>
             </div>
           </div>
           <div className="copy-rights">
-            <p>Copyright@ 2024 oneoreight all Rights reserved</p>
-          </div>
+          <p> Copyright © {new Date().getFullYear()} One or Eight. All Rights Reserved.</p>          </div>
         </div>
       </Container>
     </div>

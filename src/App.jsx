@@ -72,7 +72,8 @@ import { Suspense, lazy } from "react";
 import { useSpring, animated } from "@react-spring/web";
 import Loading from "./component/loading/Loading";
 import { useMediaQuery } from "react-responsive";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
+
 
 // Lazy load all components
 const CustomNavbar = lazy(() => import("./component/navBar/Navbar"));
@@ -137,14 +138,16 @@ function App() {
     <>
       <Suspense fallback={<Loading />}>
         {!isPolicyPage && <CustomNavbar />}
-        
+    
         <Routes>
           <Route 
             path="/" 
             element={<MainContent isMobile={isMobile} />} 
           />
           <Route path="/privacypolicy" element={<Policy />} />
+          <Route path="*" element={<Navigate to="/" />} /> 
         </Routes>
+        
       </Suspense>
     </>
   );
