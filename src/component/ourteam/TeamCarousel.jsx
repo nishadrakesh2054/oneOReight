@@ -5,14 +5,13 @@ import "react-multi-carousel/lib/styles.css";
 import arrow from "../../assets/Websitassets/button-arrow.png";
 import bSir from "../../assets/team/1.png";
 import aSir from "../../assets/team/2.png";
-import sMaam from "../../assets/team/3.png";
-import nSir from "../../assets/team/4.png";
-// import lMaam from "../../assets/team/5.png";
-import Rakesh from "../../assets/team/RAKESH.png";
-import Rizn from "../../assets/team/RIJAN.png";
-import sajanSir from '../../assets/team/sajan.png'
-import abisek from '../../assets/team/abshek1.png'
-
+import sajanSir from "../../assets/team/sajan.png";
+import Lumanti from "../../assets/team/newteam/Lumanti.png";
+import Rakesh from "../../assets/team/newteam/Rakesh.png";
+import Rizn from "../../assets/team/newteam/Rijan.png";
+import abisek from "../../assets/team/newteam/abhisek.png";
+import reshma from "../../assets/team/newteam/Resma.png";
+import shristi from "../../assets/team/newteam/Shristi.png";
 import "./TeamCarousel.scss";
 
 const TeamCarousel = () => {
@@ -65,23 +64,16 @@ const TeamCarousel = () => {
       info: "Leads teams, oversees strategy, and ensures seamless execution of projects.",
     },
     {
-        name: "Sajan Subba",
-        role: "Software Developer",
-        image: sajanSir,
-        bg: "#FF703D",
-        info: "Guides teams and ensures flawless project execution..",
-      },
-    {
       name: "Shristi Shakya",
       role: "Senior  Designer",
-      image: sMaam,
+      image: shristi,
       bg: "#FF7B4C",
       info: "Crafts compelling visuals and designs with a creative flair.",
     },
     {
       name: "Lumanti Maharjan",
       role: "Content Lead",
-      image: nSir,
+      image: Lumanti,
       bg: "#FF8D65",
       info: "Leads content strategies and ensures impactful storytelling.",
     },
@@ -93,19 +85,33 @@ const TeamCarousel = () => {
       info: "Develops and implements efficient software solutions while optimizing application performance.",
     },
     {
-        name: "Abhishek Shakya",
-        role: "Multimedia Producer",
-        image: abisek,
-        bg: "#FF7B4C",
-        info: "Creates and designs multimedia content such as videos, animations, and interactive media.",
-      },
+      name: "Sajan Subba",
+      role: " Software Developer",
+      image: sajanSir,
+      bg: "#FF703D",
+      info: "Guides teams and ensures flawless project execution..",
+    },
+    {
+      name: "Abhishek Shakya",
+      role: "Multimedia Producer",
+      image: abisek,
+      bg: "#F15F2B",
+      info: "Creates and designs multimedia content such as videos, animations, and interactive media.",
+    },
 
     {
       name: "Rizan Maharjan",
       role: "Jr. Graphics Designer",
       image: Rizn,
-      bg: "#FF703D",
+      bg: "#FF7B4C",
       info: "Designs engaging visuals and supports the creation of impactful graphic content.",
+    },
+    {
+      name: "Resma Shrestha",
+      role: "Sr. Graphics Designer",
+      image: reshma,
+      bg: "#FF8D65",
+      info: "Crafts innovative designs, ensures brand consistency, and mentors junior designers.",
     },
   ];
 
