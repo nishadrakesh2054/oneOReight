@@ -48,39 +48,7 @@ const Services = () => {
   return (
     <div className="Services" id="services">
       <Container>
-        {/* <div className="inside-big-text-btns">
-          <AnimatedButton
-            delay={200}
-            style={{ position: "absolute", left: "8%", bottom: "-40%" }}
-          >
-            Tech Solutions
-          </AnimatedButton>
-          <AnimatedButton
-            delay={400}
-            style={{ position: "absolute", left: "15%", top: "-20%" }}
-          >
-            Branding & Strategy
-          </AnimatedButton>
-          <AnimatedButton
-            delay={600}
-            style={{ position: "absolute", left: "35%", bottom: "-10%" }}
-          >
-            Merchandising
-          </AnimatedButton>
-          <AnimatedButton
-            delay={800}
-            style={{ position: "absolute", left: "60%", bottom: "-40%" }}
-          >
-            Multimedia Production
-          </AnimatedButton>
-          <AnimatedButton
-            delay={1000}
-            style={{ position: "absolute", left: "70%", top: "-10%" }}
-          >
-            Branded Content
-          </AnimatedButton>
-          <h1>OUR PLAYBOOK</h1>
-        </div> */}
+       
 
         <div className="inside-big-text-btns">
           <AnimatedButton
