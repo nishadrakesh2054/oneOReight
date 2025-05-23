@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./NewPortfolio.scss";
+import "./newportfolio.scss";
 import { Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { FaLongArrowAltRight } from "react-icons/fa";
