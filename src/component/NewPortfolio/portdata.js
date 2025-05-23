@@ -15,22 +15,25 @@ const portfolioItems = [
     website: p5,
     client: "Thunderbolts Development Center",
     work: "Branding & Strategy",
-
     description:
       "Thunderbolts Development Center is a youth-focused sports and education platform. We provided end-to-end branding, web development, merchandise, and promo videos to elevate their identity.",
     videos: video,
-
-    // images: [p1, p2, p3, p4, p5, tdc],
     images: [
-        { src: p1, title: "Websites", link: "https://example.com/p1" },
-        { src: p2, title: "Video", link: "https://example.com/p2" },
-        { src: p3, title: "Social Media Posters", link: "https://example.com/p1" },
-        { src: p4, title: "Event Banner", link: "https://example.com/p2" },
-        { src: p5, title: "Social Media Posters", link: "https://example.com/p1" },
-        { src:tdc, title: "Event Banner", link: "https://example.com/p2" },
-      
-      ]
-      
+      { src: p1, title: "Websites", link: "https://example.com/p1" },
+      { src: p2, title: "Video", link: "https://example.com/p2" },
+      {
+        src: p3,
+        title: "Social Media Posters",
+        link: "https://example.com/p1",
+      },
+      { src: p4, title: "Event Banner", link: "https://example.com/p2" },
+      {
+        src: p5,
+        title: "Social Media Posters",
+        link: "https://example.com/p1",
+      },
+      { src: tdc, title: "Event Banner", link: "https://example.com/p2" },
+    ],
   },
   { id: 2, img: p1, client: "Gaadi Charge", work: "Tech Solutions" },
   { id: 3, img: p2, client: "GEMS School", work: "Multimedia Services" },
